@@ -1,0 +1,39 @@
+div class: 'box box-solid' do
+  div class: 'box-header with-border' do
+    h3 'Images', class: 'box-title'
+    div class: 'box-tools pull-right' do
+      button type: 'button', class: 'btn btn-box-tool', :'data-widget' => 'collapse' do
+        i class: 'fa fa-minus'
+      end
+    end
+  end
+
+  div class: 'box-body' do
+    div id: id.to_s, class: 'carousel slide', :'data-ride' => 'carousel' do
+      ol class: 'carousel-indicators' do
+        images.size.times do |i|
+          li :'data-target' => "##{id}", :'data-slide-to' => i, class: ('active' if i == 0).to_s
+        end
+      end
+
+      div class: 'carousel-inner bg-gray' do
+        images.each_with_index do |image, index|
+          div class: "item #{'active' if index == 0}" do
+            img src: image.src
+            div class: 'carousel-caption' do
+              text_node image.description
+            end
+          end
+        end
+      end
+
+      a class: 'left carousel-control', href: "##{id}", :'data-slide' => 'prev' do
+        span class: 'fa fa-angle-left'
+      end
+
+      a class: 'right carousel-control', href: "##{id}", :'data-slide' => 'next' do
+        span class: 'fa fa-angle-right'
+      end
+    end
+  end
+end

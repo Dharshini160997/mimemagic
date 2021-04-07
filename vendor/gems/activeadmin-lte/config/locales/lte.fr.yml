@@ -1,0 +1,6 @@
+fr:
+  active_admin:
+    close: Fermer
+    save_modif: Enregistrer les modifications
+    create_model: "Nouveau %{model}"
+    update_model: "Mis à jour %{model}"

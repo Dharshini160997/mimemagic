@@ -1,0 +1,273 @@
+.boolean.input.form-group.checkbox
+  label
+    text-align: left
+.cancel-btn
+  margin-left: 15px
+
+table.index_table
+  thead tr th
+    border-bottom: none
+.right-side > .content-header
+  min-height: 67px
+  position: relative
+  z-index: 1
+.right-side > .content
+  min-height: 500px
+.action-items-block
+  float: right
+  position: absolute
+  top: 20px
+  right: 15px
+.breadcrumb-block
+  margin-top: -10px
+.breadcrumb-block > ol
+  li + li:before
+    content: ">\00a0"
+  a
+    color: #444
+    text-decoration: none
+
+  background: transparent
+  margin-top: 0px
+  margin-bottom: 0
+  font-size: 12px
+  padding: 7px 5px
+  top: 15px
+  right: 15px
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  border-radius: 2px
+  padding-top: 2px
+
+.main-menu-dropdown-caret
+  color: #fff
+  position: absolute
+  top: 0px
+  padding-top: 15px
+  right: 15px
+  height: 100%
+  width: 30px
+  text-align: right
+  cursor: pointer
+  &:hover
+    color: #65A5FF
+li.has_nested
+  position: relative
+#index_footer
+  .left-block
+    padding-top: 10px
+  .right-block
+    text-align: right
+.table_tools_segmented_control, .batch_action_dropdown
+  display: inline-block
+  padding: 3px
+  border: 1px solid #ccc
+  margin-top: 10px
+  margin-left: 10px
+  border-radius: 3px
+.filter-toggle
+  margin-right: 10px
+  margin-top: 10px
+  display: inline-block
+  padding: 3px
+  border: 1px solid #ccc
+  border-radius: 3px
+  position: absolute
+  top: 0px
+  right: 0px
+
+.index-filter-outer
+  margin-top: 42px
+  overflow: hidden
+  border-bottom: 1px solid #ccc
+  position: relative
+  width: 100%
+  &:before
+    clear: both
+  &:after
+    display: table
+    content: ''
+    clear: both
+    height: 1px
+    width: 100%
+    bottom: 0px
+    position: absolute
+    border-bottom: 1px solid darken(#5e686b, 10)
+    // border-bottom: 1px solid rgb(16, 145, 170)
+  .index-filter
+    display: none
+  &.active
+    .index-filter
+      display: block
+
+.index-filter
+  padding: 15px
+  background: #5e686b !important
+  border-top: 1px solid #eee
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+  color: #fff
+  h3
+    margin-bottom: 15px !important
+  .clear_filters_btn
+    margin-left: 10px
+.index-filter .select_and_search .select2
+  margin-right: 2px
+.filter_form
+  // border-bottom: 1px solid #A3E2FF
+  margin-bottom: 10px
+  text-align: left
+  &:before, &:after
+    display: table
+    content: ''
+  &:after
+    clear: both
+    height: 1px
+    width: 100%
+    // border-bottom: 1px solid #64BAE4
+  .actions
+    margin-left: 15px
+  .filter_form_field
+    display: inline-block
+    vertical-align: top
+    min-width: 150px
+    text-align: left
+    margin-left: 15px
+    margin-bottom: 15px
+    &:before, &:after
+      display: table
+      content: ''
+    &:after
+      clear: both
+    label
+      padding: 0px
+      font-size: 16px
+      display: block
+      text-align: left
+      color: #fff
+    input[type="text"], select
+      vertical-align: top
+      color: #555
+      background-color: #fff
+      background-image: none
+      border: none
+      border-radius: 4px
+      height: 34px
+      font-size: 14px
+      line-height: 1.42857143
+      border-radius: 0px
+    input[type="text"]
+      text-indent: 10px
+    &.filter_select
+      select
+        width: 90%
+    &.filter_string, &.filter_numeric
+      select, input
+        display: inline-block
+      select
+        width: 32%
+        margin-right: 3%
+      input
+        width: 55%
+    &.filter_date_range
+      input
+        width: 40%
+        float: left
+        position: relative
+        &:before
+          width: 20px
+          top: 5px
+          left: 0px
+          height: 100%
+          content: "\f061"
+          font-family: FontAwesome
+          position: absolute
+      span
+        width: 10%
+        float: left
+        display: block
+        text-align: center
+        position: relative
+        text-color: transparent
+        &:after
+          width: 100%
+          top: 5px
+          left: 0px
+          height: 100%
+          content: "\f061"
+          font-family: FontAwesome
+          position: absolute
+// .flashes
+//   margin-top: -20px
+//   margin-left: -15px
+//   margin-right: -15px
+//   margin-bottom: 15px
+//   .flash
+//     .alert-icon
+//       position: absolute
+//       left: 15px
+//       top: 10px
+//       font-size: 20px
+//     padding-left: 50px !important
+//     margin-left: 0px !important
+//     margin-bottom: 5px !important
+//     border-radius: 0px !important
+.index_as_table > table  th, .index_as_table > table  td
+  white-space: nowrap
+.index_as_table
+  overflow-x: scroll
+  width: 100%
+.table-action
+  min-width: 150px
+.active_admin.logged_out
+  background: #D2D6DE !important
+  // background: #222222 !important
+.box-header-inner
+  min-height: 50px
+#footer
+  text-align: center
+
+.avatar-name
+  text-overflow: ellipsis
+  white-space: nowrap
+  max-width: 90px
+  overflow: hidden
+  display: inline-block
+
+.has_many_container > h3
+  border-bottom: 1px solid #eee
+  padding-bottom: 10px
+  font-size: 18px
+.has_many_container > fieldset
+  padding: 20px
+  border-bottom: 1px solid #eee
+.has_many_container > .button.has_many_add
+  margin-top: 20px
+
+.filter_date_range
+  position: relative
+  .date-input-placeholder
+    position: absolute
+    width: 100%
+    top: 60px
+
+
+body.active_admin.logged_out.new
+  #content_wrapper > .flash
+    width: 350px
+    margin: 0px auto
+    padding: 10px
+    background-color: transparentize(#fff, .5)
+    margin-top: 30px
+    border-radius: 5px
+    color: #fff
+
+    &.flash_alert
+      background-color: #dd4b39
+.navbar-btn.sidebar-toggle
+  margin: 0
+
+.flashes
+  .flash
+    padding: 10px

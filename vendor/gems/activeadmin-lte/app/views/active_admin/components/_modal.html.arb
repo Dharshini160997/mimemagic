@@ -1,0 +1,35 @@
+icon =
+  case heading[:type].to_sym
+  when :danger  then 'fa fa-ban'
+  when :success then 'fa fa-check'
+  when :warning then 'fa fa-warning'
+  else 'fa fa-info'
+  end
+
+cb_class = heading[:type].to_sym == :default ? 'btn-default' : 'btn-outline'
+sb_class = heading[:type].to_sym == :default ? 'btn-primary' : 'btn-outline'
+
+div class: "modal fade modal-#{heading[:type]}", id: heading[:id].to_s, tabindex: '-1', role: 'dialog' do
+  div class: 'modal-dialog' do
+    div class: 'modal-content' do
+      div class: 'modal-header' do
+        button type: 'button', class: 'close', :'data-dismiss' => 'modal', :'aria-label' => 'Close' do
+          span '&times;'.html_safe, :'aria-hidden' => true
+        end
+        h4 class: 'modal-title' do
+          span class: icon
+          span heading[:title] || 'Modal title'
+        end
+      end
+
+      div class: 'modal-body' do
+        div body
+      end
+
+      div class: 'modal-footer' do
+        button I18n.t('active_admin.close'), type: 'button', class: "btn pull-left #{cb_class}", :'data-dismiss' => 'modal'
+        button I18n.t('active_admin.save_modif'), type: 'button', class: "btn #{sb_class}"
+      end
+    end
+  end
+end

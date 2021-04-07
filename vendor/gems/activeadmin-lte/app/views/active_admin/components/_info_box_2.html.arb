@@ -1,0 +1,16 @@
+div class: "info-box bg-#{color}" do
+  span class: 'info-box-icon' do
+    i class: "fa #{icon}"
+  end
+
+  div class: 'info-box-content' do
+    span data[:text], class: 'info-box-text'
+    span data[:number], class: 'info-box-number'
+
+    div class: 'progress' do
+      div class: 'progress-bar', style: "width: #{data[:progress]}%"
+    end
+
+    span data[:description], class: 'progress-description'
+  end
+end

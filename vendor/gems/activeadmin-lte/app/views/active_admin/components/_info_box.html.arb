@@ -1,0 +1,10 @@
+div class: 'info-box' do
+  span class: "info-box-icon bg-#{color}" do
+    i class: "fa #{icon}"
+  end
+
+  div class: 'info-box-content' do
+    span data[:text], class: 'info-box-text'
+    span data[:number], class: 'info-box-number'
+  end
+end

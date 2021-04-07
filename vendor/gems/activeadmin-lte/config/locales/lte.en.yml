@@ -1,0 +1,6 @@
+en:
+  active_admin:
+    close: Close
+    save_modif: Save changes
+    create_model: "New %{model}"
+    update_model: "%{model} update"
